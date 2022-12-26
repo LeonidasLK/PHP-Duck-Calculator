@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+<title> PHP Calculator</title>
+    <meta charset="UTF-8">
+
+<style>
+    body{
+        background-color:white;
+        text-align:center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:black;
+        font-style:italic
+    }
+    
+    input{
+        padding-top:5px;
+        background-color:aqua;
+        color:black;
+        font-weight:100;
+        margin:5px; 
+        cursor:pointer;
+    }
+    select{
+        cursor:pointer;
+        margin-top:30px;
+        background-color:aqua;
+        font-weight:bold;
+    }
+</style>
+
+</head>
+
+<body>
+
+<h1> PHP <u>Duck</u> Calculator</h1>
+<img src="https://avatars.githubusercontent.com/u/117288313?v=4" alt="duck with a hat" width="100">
+ <form action="index.php"  method="post">
+    Αριθμός 1 <input type="number" name="number1" required  oninvalid="this.setCustomValidity('Ξεχάσατε να βάλετε αριθμό.')"  oninput="this.setCustomValidity('')">
+ </br>
+    Αριθμός 2 <input type="number" name="number2" required>
+</br>
+<select name="select">
+    <option value="#">Διάλεξε Πράξη</option>
+    <option value="+">Πρόσθεση +</option>
+    <option value="-">Αφαίρεση -</option>
+    <option value="*">Πολλαπλασιασμός *</option>
+    <option value="/">Διαίρεση /</option>
+    <option value="^">Δύναμη ^</option>
+</select>
+</br> </br>
+    <input type="Submit" value ="Υπολογισμός">
+</br>
+    <input type="reset" value ="Εκκαθάριση">
+</form>
+
+
+
+
+</body>
+
+</html>
